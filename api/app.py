@@ -3,7 +3,7 @@ import tempfile
 
 from flask import Flask, request, jsonify, send_file
 
-from compiler.compiler import ResumeLang
+from resumelang.compiler import ResumeLang
 
 
 app = Flask(__name__)
@@ -14,7 +14,7 @@ def compile_resume():
         return jsonify({"error": "No resume file provided"}), 400
     
     resume_file = request.files["resume"]
-    template_path = "../templates/latex/jakes_resume.tex"
+    template_path = "/templates/latex/jakes_resume.tex"
 
     with tempfile.TemporaryDirectory() as temp_dir:
         resume_path = os.path.join(temp_dir, "in.resume")
@@ -22,10 +22,10 @@ def compile_resume():
 
         resume_file.save(resume_path)
 
-        resume_lang = ResumeLang(resume_path)
-        resume_lang.write_template(template_path)
+        rl = ResumeLang(resume_path)
+        rl.write_template(template_path, output_path)
 
         return send_file(output_path, as_attachment=True)
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5000)
+    app.run(debug=True, host="0.0.0.0", port=5000)

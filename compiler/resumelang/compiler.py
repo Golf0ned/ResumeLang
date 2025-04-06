@@ -3,7 +3,7 @@ import json
 
 import jinja2
 
-from grammar import resume
+from resumelang.grammar import resume
 
 
 class ResumeLang:
