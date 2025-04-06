@@ -17,7 +17,7 @@ export default function Drop({ setPdf, setTs }: Props) {
         files.append("resume", file[0]);
         // pdf
         try {
-            const response_pdf = await fetch("http://127.0.0.1:5000/compile/resume", {
+            const response_pdf = await fetch("http://127.0.0.1:5000/api/compile/pdf", {
                 method: "POST",
                 body: files,
             });
@@ -35,7 +35,7 @@ export default function Drop({ setPdf, setTs }: Props) {
 
         // ts
         try {
-            const response_ts = await fetch("http://127.0.0.1:5000/compile/ts", {
+            const response_ts = await fetch("http://127.0.0.1:5000/api/compile/typescript", {
                 method: "POST",
                 body: files,
             });

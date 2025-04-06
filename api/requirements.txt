@@ -1,4 +1,6 @@
 flask
+flask-cors
 Jinja2
+pdflatex
 pyparsing
 -e ./compiler
