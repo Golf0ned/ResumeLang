@@ -1,0 +1,100 @@
+(resume
+  ;; Quick note about the time type:
+  ;; - Either M-YYYY or MM-YYYY
+  ;; - OR, for present, -
+
+  ;; Basic Info
+  (info
+    (name "")
+    (email "")
+    (phone "")
+    (location "")
+    (links ;; optional
+      (linkedin "")
+      (github "")
+      (portfolio "")
+    )
+  )
+
+  ;; Education
+  (education ;; list of entry
+    (entry
+      (name "")
+      (degree "")
+      (location "")
+      (start -)
+      (end -)
+      (gpa 4.0)
+    )
+    (entry
+      (name "")
+      (degree "")
+      (location "")
+      (start -)
+      (end -)
+      (gpa 4.0)
+    )
+  )
+
+  ;; Skills
+  (skills ;; list of entry
+    (entry
+      (category "")
+      (data "" "" "" "") ;; listof quoted
+    )
+    (entry
+      (category "")
+      (data "" "" "" "") ;; listof quoted
+    )
+  )
+
+  ;; Work Experience
+  (work ;; list of entry
+    (entry
+      (company "")
+      (role "")
+      (location "")
+      (start -)
+      (end -)
+      (bullets
+        ""
+        ""
+        ""
+      )
+    )
+    (entry
+      (company "")
+      (role "")
+      (location "")
+      (start -)
+      (end -)
+      (bullets
+        ""
+        ""
+        ""
+      )
+    )
+  )
+
+  ;; Projects
+  (projects ;; list of entry
+    (entry
+      (name "")
+      (start -)
+      (end -)
+      (bullets
+        ""
+        ""
+      )
+    )
+    (entry
+      (name "")
+      (start -)
+      (end -)
+      (bullets
+        ""
+        ""
+      )
+    )
+  )
+)

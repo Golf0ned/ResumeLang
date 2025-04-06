@@ -3,9 +3,10 @@ import "@mantine/core/styles.css";
 
 import Content from "./components/Content";
 
+
 function App() {
     return (
-        <MantineProvider>
+        <MantineProvider forceColorScheme="dark">
             <AppShell
                 header={{ height: 50 }}
                 padding="md"

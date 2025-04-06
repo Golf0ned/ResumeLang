@@ -9,4 +9,4 @@ services:
     build: ./frontend
     restart: always
     ports:
-      - "5001:5001"
+      - "80:5001"

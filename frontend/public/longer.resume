@@ -1,0 +1,95 @@
+(resume
+  ;; Basic Info
+  (info
+    (name "John Doe")
+    (email "john-doe@example.com")
+    (phone "123-456-7890")
+    (location "San Francisco, CA")
+    (links
+      (linkedin "https://www.linkedin.com/in/john-doe")
+      (github "https://github.com/john-doe")
+      (portfolio "https://john-doe.com")
+    )
+  )
+
+  ;; Education
+  (education
+    (entry
+      (name "Northwestern University")
+      (degree "B.S. Computer Science")
+      (location "Evanston, IL")
+      (start 9-2022)
+      (end -)
+      (gpa 3.7)
+    )
+    (entry
+      (name "Some HS")
+      (degree "High School Diploma")
+      (location "Sometown, CA")
+      (start 9-2018)
+      (end 6-2022)
+      (gpa 4.0)
+    )
+  )
+
+  ;; Skills
+  (skills
+    (entry
+      (category "Programming Languages")
+      (data "C++" "Python" "Rust" "SQL")
+    )
+    (entry
+      (category "Software")
+      (data "Git" "Make" "Unix" "React.js")
+    )
+  )
+
+  ;; Work Experience
+  (work
+    (entry
+      (company "Google")
+      (role "Software Engineer Intern")
+      (location "Mountain View, CA")
+      (start 6-2023)
+      (end 9-2023)
+      (bullets
+        "Built X using Rust"
+        "Optimized Y with 30 percent performance gain"
+      )
+    )
+    (entry
+      (company "Cool Company")
+      (role "Software Engineer Intern")
+      (location "Bellevue, WA")
+      (start 6-2024)
+      (end 9-2024)
+      (bullets
+        "Learned how to pronounce Kubernetes"
+        "Collecting all the jobs"
+      )
+    )
+  )
+
+  ;; Projects
+  (projects
+    (entry
+      (name "ResumeLang")
+      (start 4-2025)
+      (end -)
+      (bullets
+        "Designed a custom language (ResumeLang) and compiler for a language to standardize resume content"
+        "Built an API to integrate ResumeLang into projects with TypeScript and generate a resume with Latex"
+      )
+    )
+    (entry
+      (name "nu-esports-bot")
+      (start 1-2025)
+      (end -)
+      (bullets
+        "Wrote a Discord bot for Northwestern Esports"
+        "Built a database with postgres and dockerized everything"
+        "Increased server engagement by 25 percent"
+      )
+    )
+  )
+)

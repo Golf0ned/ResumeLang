@@ -194,6 +194,7 @@
      \textbf{<;s.category;>:}{
          << for i in s.data >>
          <;i;>
+         << if not loop.last >>, << endif >>
          << endfor >>
      } \\
     << endfor >>
