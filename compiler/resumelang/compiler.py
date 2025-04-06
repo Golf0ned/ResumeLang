@@ -32,7 +32,7 @@ class ResumeLang:
 
     def write_template(self, template, output=None):
         env = jinja2.Environment(
-            loader=jinja2.FileSystemLoader(os.path.dirname(__file__) + "/templates/"),
+            loader=jinja2.FileSystemLoader("."),
             block_start_string="<<",
             block_end_string=">>",
             variable_start_string="<;",
@@ -54,11 +54,11 @@ class ResumeLang:
 if __name__ == "__main__":
     import sys
     
-    if len(sys.argv) != 2:
-        print("Usage: python compiler.py <file.resume>")
+    if len(sys.argv) != 3:
+        print("Usage: python compiler.py </path/to/template/file> <*.resume>")
         sys.exit(1)
 
-    file = sys.argv[1]
+    template = sys.argv[1]
+    file = sys.argv[2]
     resume_lang = ResumeLang(file)
-    # resume_lang.emit_json()
-    resume_lang.write_template("latex/jakes_resume.tex")
+    resume_lang.write_template(template)
