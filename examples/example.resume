@@ -36,11 +36,11 @@
   (skills
     (entry
       (category "Programming Languages")
-      (items "C++" "Python" "Rust" "SQL")
+      (data "C++" "Python" "Rust" "SQL")
     )
     (entry
       (category "Software")
-      (items "Git" "Make" "Unix" "React.js")
+      (data "Git" "Make" "Unix" "React.js")
     )
   )
 
@@ -54,7 +54,7 @@
       (end 9-2023)
       (bullets
         "Built X using Rust"
-        "Optimized Y with 30% performance gain"
+        "Optimized Y with 30 percent performance gain"
       )
     )
   )
